@@ -1,9 +1,9 @@
 import java.util.Scanner;
 public class App6 {
         public static boolean SNT(int n) {
-        int temp=0;
+        int temp = 0;
         for (int i=1; i<=n; i++) {
-            if (n%i==0) {
+            if (n % i==0) {
                 temp++;
             }
         }
@@ -17,8 +17,8 @@ public class App6 {
         public static boolean SHT(int n) {
             int tong = 0;
             for (int i=1; i<n; i++) {
-                if (n%i==0) {
-                    tong+=i;
+                if (n % i == 0) {
+                    tong += i;
                 }
             }
             if (tong==n) {
@@ -33,8 +33,8 @@ public class App6 {
             System.out.println("Nhập vào số nguyên n: ");
             n = sc.nextInt();
             System.out.println("Các số nguyên nhỏ hơn "+n+" là: ");
-            for (int i=1; i<n; i++) {
-                if (SNT(i)==true) {
+            for (int i = 1; i < n; i++) {
+                if (SNT(i) == true) {
                     System.out.print(i+"\t");
                 }
             }
